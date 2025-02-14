@@ -91,6 +91,14 @@ const AttendeeDetails = () => {
             <button type="submit" className="bg-blue-500 text-white py-3 px-6 rounded-md hover:bg-blue-600 transition">Submit</button>
           </form>
         </div>
+         {/* Special Request */}
+         <div className="flex flex-col gap-2">
+              <label htmlFor="specialRequest" className="font-semibold">Special request?</label>
+              <textarea
+                {...register('specialRequest')}
+                className="border border-gray-600 bg-transparent p-3 rounded-md h-24 resize-none focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+            </div>
       </div>
 
       {ticket && (
