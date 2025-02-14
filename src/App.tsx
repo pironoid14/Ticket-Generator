@@ -1,5 +1,5 @@
 
-import Home from "./pages/Home"
+
 import AttendeeDetails from "./pages/AttendeeDetails" 
 import TicketReady from "./pages/TicketReady"
 import { Routes, Route } from "react-router-dom"
@@ -9,7 +9,7 @@ const App = () => {
   return (
     <div>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<SelectTicket />} />
         <Route path="/attendee-details" element={<AttendeeDetails />} />
         <Route path="/Ticketready" element={<TicketReady />} />
         <Route path="/AboutProject" element = {<AboutProject/>}/>
