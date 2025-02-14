@@ -51,7 +51,9 @@ const AttendeeDetails = () => {
   };
 
   return (
-    <div className="absolute flex flex-col items-center gap-20 py-[112px] left-1/2 top-[34px] -translate-x-1/2 px-0 w-full min-h-screen bg-[radial-gradient(circle,_rgba(36,160,181,0.2)_0%,_rgba(36,160,181,0)_100%)] bg-[#02191D]">
+    <div className="absolute flex flex-col items-center gap-20 py-[112px] left-1/2 top-[34px] -translate-x-1/2 px-0 w-full min-h-screen "
+    style={{ background: "radial-gradient(52.52% 32.71% at 50% 97.66%, rgba(36, 160, 181, 0.20) 0%, rgba(36, 160, 181, 0.00) 100%), #02191D", }}
+    >
       <Header />
       <div className="border-2 rounded-[24px] px-12 py-12 w-[700px] h-auto scale-x-[370px] gap-y-8 text-left">
         <section className="align-text-top flex justify-between text-left">

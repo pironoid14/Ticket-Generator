@@ -1,5 +1,5 @@
-const CLOUDINARY_URL = 'https://api.cloudinary.com/v1_1/YOUR_CLOUD_NAME/upload';
-const UPLOAD_PRESET = 'YOUR_UPLOAD_PRESET';
+const CLOUDINARY_URL = 'https://api.cloudinary.com/v1_1/dvtdhmwpp/upload';
+const UPLOAD_PRESET = 'pironoidic';
 
 export const uploadToCloudinary = async (file: File): Promise<string> => {
   const formData = new FormData();
