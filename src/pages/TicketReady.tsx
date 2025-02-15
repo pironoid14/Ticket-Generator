@@ -23,12 +23,12 @@ const TicketReady = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#02191d] to-[#12464E]">
       <Header />
-      <div className="max-w-lg mx-auto p-8 mt-20">
-        <div className="bg-[#041E23] p-6 rounded-lg shadow-lg flex flex-col items-center relative">
+      <div className="max-w-lg mx-auto p-4 sm:p-8 mt-10 sm:mt-20">
+        <div className="bg-[#041E23] p-4 sm:p-6 rounded-lg shadow-lg flex flex-col items-center relative">
           {ticketData && (
             <div
               id="ticket"
-              className="text-white text-center relative z-10"
+              className="text-white text-center relative z-10 font-JejuMyeongjo"
               style={{
                 backgroundImage: `url(${img})`,
                 backgroundSize: 'cover',
@@ -37,26 +37,26 @@ const TicketReady = () => {
                 borderRadius: '10px'
               }}
             >
-              <h3 className="text-2xl font-bold">Conference Ticket</h3>
-              <img src={ticketData.photoUrl} alt="Avatar" className="w-24 h-24 mx-auto rounded-full mt-4" />
-              <p className="text-lg font-semibold mt-2">{ticketData.name}</p>
-              <p className="text-sm text-gray-400">{ticketData.email}</p>
-              <p className="text-sm text-gray-400">{ticketData.selectedTicket.name} - {ticketData.selectedTicket.price}</p>
-              <p className="text-sm text-gray-400">Quantity: {ticketData.selectedOption}</p>
+              <h3 className="text-xl sm:text-2xl font-bold font-JejuMyeongjo">Conference Ticket</h3>
+              <img src={ticketData.photoUrl} alt="Avatar" className="w-20 h-20 sm:w-24 sm:h-24 mx-auto rounded-full mt-4" />
+              <p className="text-base sm:text-lg font-semibold font-JejuMyeongjo mt-2">{ticketData.name}</p>
+              <p className="text-xs sm:text-sm text-gray-400 font-JejuMyeongjo">{ticketData.email}</p>
+              <p className="text-xs sm:text-sm text-gray-400 font-JejuMyeongjo">{ticketData.selectedTicket.name} - {ticketData.selectedTicket.price}</p>
+              <p className="text-xs sm:text-sm text-gray-400 font-JejuMyeongjo">Quantity: {ticketData.selectedOption}</p>
             </div>
           )}
-          <div className="flex justify-between mt-6 w-full relative z-10">
-            <Link to="/SelectTicket">
+          <div className="flex flex-col sm:flex-row justify-between mt-6 w-full relative z-10">
+            <Link to="/SelectTicket" className="mb-4 sm:mb-0 sm:mr-4">
               <button
                 type="submit"
-                className="bg-blue-600 text-white py-3 px-6 rounded-md hover:bg-blue-700 transition"
+                className="bg-blue-600 text-white py-2 px-4 sm:py-3 sm:px-6 rounded-md hover:bg-blue-700 transition w-full sm:w-auto"
               >
                 Book another ticket
               </button>
             </Link>
             <button
               type="button"
-              className="bg-gray-800 text-white py-3 px-6 rounded-md hover:bg-gray-700 transition"
+              className="bg-gray-800 text-white py-2 px-4 sm:py-3 sm:px-6 rounded-md hover:bg-gray-700 transition w-full sm:w-auto"
               onClick={captureTicket}
             >
               Download Ticket

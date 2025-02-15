@@ -11,8 +11,8 @@ function App() {
       <Routes>
         <Route path="/" element={<SelectTicket />} />
         <Route path="/SelectTicket" element={<SelectTicket />} />
-        <Route path="/attendee-details" element={<AttendeeDetails />} />
-        <Route path="/ticket-ready" element={<TicketReady />} />
+        <Route path="/AttendeeDetails" element={<AttendeeDetails />} />
+        <Route path="/TicketReady" element={<TicketReady />} />
         <Route path="/AboutProject" element = {<AboutProject/>}/>
         
       </Routes>

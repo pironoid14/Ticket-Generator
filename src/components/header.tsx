@@ -9,9 +9,9 @@ const Header = () => {
         <img src={ticc} alt="ticc" className="w-20 h-20" />
         <nav className="box-border flex flex-row items-center justify-center">
           <ul className="flex gap-4 px-20 text-center">
-            <li><span className='text-2xl font-bold text-[#ffffff] font-[JejuMyeongjo]'>Events</span></li>
-            <li className='text-xl text-[#B3B3B3] font-[JejuMyeongjo]'>My Tickets</li>
-            <li className='text-xl text-[#B3B3B3] font-[JejuMyeongjo]'>About Project</li>
+            <li><span className='text-2xl font-bold text-[#ffffff] font-JejuMyeongjo'>Events</span></li>
+            <li className='text-xl text-[#B3B3B3] font-JejuMyeongjo'>My Tickets</li>
+            <li className='text-xl text-[#B3B3B3] font-JejuMyeongjo'>About Project</li>
           </ul>
         </nav>
       </div>
