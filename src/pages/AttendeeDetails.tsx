@@ -7,8 +7,8 @@ import Header from '../components/header';
 import { attendeeSchema, type AttendeeFormData } from '../utils/zodschema';
 import { uploadToCloudinary } from '../utils/cloudinary';
 import { saveToIndexedDB, saveToLocalStorage } from '../utils/storage';
-import html2canvas from 'html2canvas';
 import { useLocation, useNavigate } from 'react-router-dom';
+import html2canvas from 'html2canvas';
 
 const AttendeeDetails = () => {
   const location = useLocation();
@@ -72,12 +72,14 @@ const AttendeeDetails = () => {
   };
 
   return (
-    <div className="absolute flex flex-col items-center gap-20 py-28 left-1/2 top-10 -translate-x-1/2 px-4 w-full min-h-screen bg-gradient-to-b from-blue-900 to-gray-900">
+    <div className="absolute flex flex-col items-center gap-20 py-28 left-1/2 top-10 -translate-x-1/2 px-4 w-full min-h-screen bg-gradient-to-b from-[#02191d] to-[#12464E]">
       <Header />
       <div className="border-2 border-gray-700 rounded-2xl px-12 py-12 w-full max-w-3xl text-left bg-gray-800 shadow-lg">
+       <div className="flex justify-between">
         <h2 className="text-3xl font-bold text-white">Attendee Details</h2>
         <p className="text-white mt-2">Step 2/3</p>
         
+        </div>
         <div className="border-2 border-gray-700 rounded-lg p-6 w-full mt-8 bg-gray-900 text-white">
           <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-6">
             <div className="flex flex-col gap-2">
@@ -136,3 +138,6 @@ const AttendeeDetails = () => {
 };
 
 export default AttendeeDetails;
+
+
+// Removed conflicting local declarations of html2canvas

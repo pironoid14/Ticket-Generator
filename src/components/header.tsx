@@ -4,7 +4,7 @@ import ticc from '../assets/ticc.svg'
 
 const Header = () => {
   return (
-    <div className="absolute box-border flex flex-row justify-between items-center px-4 py-3 bg-[#05252C] border border-[#197686] backdrop-blur-[2px] rounded-[24px] top-[20px] left-1/2 -translate-x-1/2 w-full h-[76px] max-w-screen-lg">
+    <div className="absolute box-border flex flex-row justify-between items-center px-4 py-3 bg-[#05252C] border border-[#197686] backdrop-blur-[2px] rounded-[24px] top-[20px] left-1/2 -translate-x-1/2 w-full h-[76px] max-w-screen-lg ">
       <div className="flex flex-row items-center justify-between gap-4">
         <img src={ticc} alt="ticc" className="w-20 h-20" />
         <nav className="box-border flex flex-row items-center justify-center">
