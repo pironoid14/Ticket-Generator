@@ -74,13 +74,13 @@ const AttendeeDetails = () => {
   return (
     <div className="absolute flex flex-col items-center gap-20 py-28 left-1/2 top-10 -translate-x-1/2 px-4 w-full min-h-screen bg-gradient-to-b from-[#02191d] to-[#12464E]">
       <Header />
-      <div className="border-2 border-gray-700 rounded-2xl px-12 py-12 w-full max-w-3xl text-left bg-gray-800 shadow-lg">
+      <div className="border-2 border-gray-700 rounded-2xl px-12 py-12 w-full max-w-3xl text-left bg-[#02191d] shadow-lg">
        <div className="flex justify-between">
         <h2 className="text-3xl font-bold text-white">Attendee Details</h2>
         <p className="text-white mt-2">Step 2/3</p>
         
         </div>
-        <div className="border-2 border-gray-700 rounded-lg p-6 w-full mt-8 bg-gray-900 text-white">
+        <div className="border-2 border-gray-700 rounded-lg p-6 w-full mt-8 bg-[#08252B] text-white">
           <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-6">
             <div className="flex flex-col gap-2">
               <label className="font-semibold">Photo</label>

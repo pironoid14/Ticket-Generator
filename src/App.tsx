@@ -4,10 +4,12 @@ import TicketReady from './pages/TicketReady';
 import AboutProject from "./pages/AboutProject"
 import SelectTicket from './pages/SelectTicket';
 
+
 function App() {
   return (
     <Router>
       <Routes>
+        <Route path="/" element={<SelectTicket />} />
         <Route path="/SelectTicket" element={<SelectTicket />} />
         <Route path="/attendee-details" element={<AttendeeDetails />} />
         <Route path="/ticket-ready" element={<TicketReady />} />
