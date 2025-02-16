@@ -1,4 +1,5 @@
 import Section from "../components/SectionTitle";
+import Header from "../components/header";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 
@@ -46,8 +47,9 @@ const SelectTicket: React.FC = () => {
 
   return (
     <div className="min-h-screen flex justify-center items-center" style={{ background: "radial-gradient(52.52% 32.71% at 50% 97.66%, rgba(36, 160, 181, 0.20) 0%, rgba(36, 160, 181, 0.00) 100%), #02191D", }}>
+      <Header />
       <div className="w-full max-w-[700px] mx-auto py-12 px-6 sm:px-12 border-2 border-[#0E464F] rounded-[40px] flex flex-col items-center h-auto sm:h-[858px] bg-[#02191D] shadow-lg">
-        <div className="flex flex-col sm:flex-row justify-between w-full gap-4 mb-8">
+        <div className="flex flex-col sm:flex-row justify-between w-full gap-4  mb-8">
           <h1 className="text-3xl font-bold font-JejuMyeongjo text-white">Ticket Selection</h1>
           <p className="text-lg font-JejuMyeongjo text-white">Step 1/3</p>
         </div>
